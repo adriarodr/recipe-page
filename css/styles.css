@@ -5,8 +5,8 @@
 
         --c-neutral-100: hsl(0, 0%, 100%);
         --c-neutral-200: hsl(330, 100%, 98%);
-        --c-neutral-300: hsl(30, 54%, 90%);
-        --c-neutral-400: hsl(30, 18%, 87%);
+        --c-neutral-300: hsl(30, 18%, 87%);
+        --c-neutral-400: hsl(30, 54%, 90%);
         --c-neutral-600: hsl(30, 10%, 34%);
         --c-neutral-700: hsl(24, 5%, 18%);
 
@@ -23,8 +23,27 @@
 - Desktop: 1440px */
 
 /* CSS Reset Start */
-body, header, nav, main, footer, h1, div, img {
+body, main, footer, section, h1, h2, h3, div, img {
         margin: 0;
         padding: 0;
         border: 0;
+}
+
+/* Style Rules for the Body */
+body {
+        background-color: var(--c-neutral-400);
+}
+
+/* Style Rules for Main Section Container */
+#container {
+        background-color: var(--c-neutral-100);
+        width: 50%;
+        margin: 7rem auto;
+        border-radius: 25px;
+        padding: 2.5rem;
+}
+
+img {
+        width: 100%;
+        border-radius: 10px;
 }
