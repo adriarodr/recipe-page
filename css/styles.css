@@ -1,20 +1,18 @@
 /* CSS Varibles */
 :root {
-        --c-primary-500: hsl(332, 51%, 32%);
-        --c-primary-600: hsl(14, 45%, 36%);
+        --c-accent-200: hsl(330, 100%, 98%);
+        --c-accent-500: hsl(332, 51%, 32%);
+        --c-accent-600: hsl(14, 45%, 36%);
 
         --c-neutral-100: hsl(0, 0%, 100%);
-        --c-neutral-200: hsl(330, 100%, 98%);
         --c-neutral-300: hsl(30, 18%, 87%);
-        --c-neutral-400: hsl(30, 54%, 90%);
+        --c-neutral-400: hsl(30, 18%, 87%);
         --c-neutral-600: hsl(30, 10%, 34%);
         --c-neutral-700: hsl(24, 5%, 18%);
 
         --fw-normal: 400;
         --fw-bold: 600;
         --fw-very-bold: 700;
-
-        --fs-regular: 16px;
 }
 
 /* The designs were created to the following widths:
@@ -22,8 +20,13 @@
 - Mobile: 375px
 - Desktop: 1440px */
 
-/* CSS Reset Start */
-body, main, footer, section, h1, h2, h3, div, img {
+/* CSS Reset */
+
+* {
+        box-sizing: border-box;
+}
+
+body, main, footer, section, h1, h2, h3, div, img, ul, ol {
         margin: 0;
         padding: 0;
         border: 0;
@@ -32,18 +35,102 @@ body, main, footer, section, h1, h2, h3, div, img {
 /* Style Rules for the Body */
 body {
         background-color: var(--c-neutral-400);
+        font-family: "Outfit", Arial, Helvetica, sans-serif;
+}
+
+/* Style Rules for all images */
+img {
+        max-width: 100%;
+        display: block;
+}
+
+/* Style rules for headers */
+h1, 
+h2 {
+        font-family: "Young Serif", 'Times New Roman', Times, serif;
+        font-weight: var(--fw-very-bold);
+}
+
+h1 {
+        color: var(--c-neutral-700);
+}
+
+h2 {
+        color: var(--c-accent-600);
+}
+
+h3 {
+        color: var(--c-accent-500);
+        font-weight: var(--fw-bold);
+}
+
+/* Style Rule for ordered and unordered list */
+ul, 
+ol {
+        margin: 1em;
+}
+
+ul li, 
+ol li {
+        padding-left: 1.25em;
+}
+
+ul li:not(:last-child),
+ul li:not(:last-child) {
+        margin-bottom: 1em;
+}
+
+ul li::marker, 
+ol li::marker {
+        font-size: 0.75em;
 }
 
 /* Style Rules for Main Section Container */
-#container {
+main {
         background-color: var(--c-neutral-100);
-        width: 50%;
-        margin: 7rem auto;
-        border-radius: 25px;
-        padding: 2.5rem;
+        width: 100%;
+        font-weight: var(--fw-normal);
+        color: var(--c-neutral-600);
 }
 
-img {
-        width: 100%;
+#container {
+        margin: 2em;
+}
+
+@media screen and (min-width: 375px) {
+        
+        main {
+                width: 90%;   
+                margin: 7rem auto;
+                padding: 2rem;
+                border-radius: 25px;
+        }
+
+        img {
+                border-radius: 10px;
+        }
+
+        #container {
+                margin: 2em 0 1em 0;
+        }
+}
+
+@media screen and (min-width: 820px) {
+        main {
+                width: 60%;   
+         }
+}
+
+#prep_time  {
+        background-color: var(--c-accent-200);
+        padding: 1.5em;
+        margin-block: 1.75em;
         border-radius: 10px;
+}
+#prep_time ul li::marker {
+        color: var(--c-accent-500);
+}
+
+.bold {
+        font-weight: var(--fw-bold);
 }
