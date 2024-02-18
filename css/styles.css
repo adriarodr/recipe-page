@@ -145,16 +145,18 @@ main {
         padding-block: 0.75em;
 }
 
-#nutrition_value tr td:first-child{
-        padding-left: 2em;
+#nutrition_value th {
         width: 50%;
+        padding-left: 2em;
+        text-align: left;
+        font-weight: var(--fw-normal);
 }
 
 #nutrition_value tr:not(:last-child) {
         border-bottom: 1px solid var(--c-neutral-200);
 }
 
-#nutrition_value tr td:last-child {
+#nutrition_value td {
         color: var(--c-accent-600);
         font-weight: var(--fw-very-bold);
 }
