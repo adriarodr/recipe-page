@@ -6,11 +6,11 @@
         --c-accent-600: hsl(14, 45%, 36%);
 
         --c-neutral-100: hsl(0, 0%, 100%);
-        --c-neutral-300: hsl(30, 18%, 87%);
+        --c-neutral-200: hsl(30, 18%, 87%);
         --c-neutral-400: hsl(30, 18%, 87%);
         --c-neutral-600: hsl(30, 10%, 34%);
         --c-neutral-700: hsl(24, 5%, 18%);
-        --c-neutral-800: hsl(100, 100, 0%);
+        --c-neutral-800: hsl(0, 0%, 0%);
 
         --fw-normal: 400;
         --fw-bold: 600;
@@ -53,7 +53,7 @@ img {
 
 /* Style rules for headers */
 h1, 
-h2 {
+h3 {
         font-family: "Young Serif", 'Times New Roman', Times, serif;
         font-weight: var(--fw-bold);
 }
@@ -63,13 +63,13 @@ h1 {
         font-size: 2.25em;
 }
 
-h2 {
+h3 {
         color: var(--c-accent-600);
         margin-block: 0.5em;
         font-size: 2em;
 }
 
-h3 {
+h2 {
         color: var(--c-accent-500);
         font-weight: var(--fw-very-bold);
         font-size: 1.25em;
