@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - README.md
 - screenshot of the webpage in images folders
+- changelog.md for further references
 
 ### Changed
 - some td tag to th tag on table in nutrition section to add to accessibility
