@@ -1,6 +1,7 @@
 /* CSS Varibles */
 :root {
         --c-accent-200: hsl(330, 100%, 98%);
+        --c-accent-400: hsl(1, 97%, 38%);
         --c-accent-500: hsl(332, 51%, 32%);
         --c-accent-600: hsl(14, 45%, 36%);
 
@@ -9,19 +10,14 @@
         --c-neutral-400: hsl(30, 18%, 87%);
         --c-neutral-600: hsl(30, 10%, 34%);
         --c-neutral-700: hsl(24, 5%, 18%);
+        --c-neutral-800: hsl(100, 100, 0%);
 
         --fw-normal: 400;
         --fw-bold: 600;
         --fw-very-bold: 700;
 }
 
-/* The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px */
-
 /* CSS Reset */
-
 * {
         box-sizing: border-box;
 }
@@ -37,7 +33,6 @@ div,
 img, 
 ul, 
 ol {
-
         margin: 0;
         padding: 0;
         border: 0;
@@ -60,17 +55,17 @@ img {
 h1, 
 h2 {
         font-family: "Young Serif", 'Times New Roman', Times, serif;
-        font-weight: var(--fw-very-bold);
+        font-weight: var(--fw-bold);
 }
 
 h1 {
         color: var(--c-neutral-700);
-        font-size: 2.75em;
+        font-size: 2.25em;
 }
 
 h2 {
         color: var(--c-accent-600);
-        margin: 0.5em;
+        margin-block: 0.5em;
         font-size: 2em;
 }
 
@@ -84,7 +79,7 @@ h3 {
 /* Style Rule for ordered and unordered list */
 ul, 
 ol {
-        margin: 1em 2.5em;
+        margin-left: 1.5em;
 }
 
 ul li, 
@@ -94,7 +89,7 @@ ol li {
 
 ul li:not(:last-child),
 ol li:not(:last-child) {
-        margin-bottom: 1em;
+        margin-block: 1.25em;
 }
 
 ul li::marker, 
@@ -111,44 +106,17 @@ ol li::marker {
 /* Style Rules for Main Section Container */
 main {
         background-color: var(--c-neutral-100);
-        width: 100%;
         font-weight: var(--fw-normal);
         color: var(--c-neutral-600);
 }
 
 #container {
-        margin: 2em;
-}
-
-/* Media query for tablet screens */
-@media screen and (min-width: 375px) {
-        
-        main {
-                width: 90%;   
-                margin: 7rem auto;
-                padding: 4%;
-                border-radius: 25px;
-        }
-
-        img {
-                border-radius: 10px;
-        }
-
-        #container {
-                margin: 2em 0 1em 0;
-        }
-}
-
-/* Media query for laptop/desktop screens */
-@media screen and (min-width: 820px) {
-        main {
-                width: 60%;   
-         }
+        padding: 8%;
 }
 
 #prep_time  {
         background-color: var(--c-accent-200);
-        padding: 1.5em;
+        padding: 2em;
         margin-block: 1.75em;
         border-radius: 10px;
 }
@@ -159,10 +127,79 @@ main {
 
 .bold {
         font-weight: var(--fw-very-bold);
-
 }
 
 #ingredients, 
 #instructions {
-        border-bottom: 1px solid var(--c-neutral-400);
+        border-bottom: 1px solid var(--c-neutral-200);
+        padding-bottom: 2em;
+}
+
+/* Style Rules for Tables */
+#nutrition_value {
+        width: 100%;
+        border-collapse: collapse;
+}
+
+#nutrition_value td {
+        padding-block: 0.75em;
+}
+
+#nutrition_value tr td:first-child{
+        padding-left: 2em;
+        width: 50%;
+}
+
+#nutrition_value tr:not(:last-child) {
+        border-bottom: 1px solid var(--c-neutral-200);
+}
+
+#nutrition_value tr td:last-child {
+        color: var(--c-accent-600);
+        font-weight: var(--fw-very-bold);
+}
+
+/* Style Rules for Footer Section */
+#attribution {
+        text-align: center;
+        padding: 2em;
+        color: var(--c-neutral-800);
+}
+
+.external_link {
+        color: var(--c-neutral-700);
+        border-bottom: 2px solid var(--c-accent-400);
+        text-decoration: none;
+}
+
+.external_link:hover {
+        border-bottom: 4px solid var(--c-accent-400);
+        transition: all 0.2s ease;
+}
+
+/* Media query for tablet & laptop/desktop screens */
+@media screen and (min-width: 810px) {
+        
+        main {
+                width: 90%;   
+                margin: 2em auto;
+                padding: 4%;
+                border-radius: 25px;
+        }
+
+        img {
+                border-radius: 10px;
+        }
+
+        #container {
+                padding: 2em 0 0 0;
+        }
+
+}
+
+/* Media query for larger desktop screens */
+@media screen and (min-width: 1320px) {
+        main {
+                width: 50%;
+        }
 }
