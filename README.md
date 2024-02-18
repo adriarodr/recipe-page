@@ -20,8 +20,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Frontend Mentor solution URL](https://www.frontendmentor.io/solutions/recipe-page-with-mobile-first-approach-U1gT_DJkzH)
-- Live Site URL: [live site URL](https://adriarodr.github.io/recipe-page/)
+- Solution URL: ![Frontend Mentor Solution URL](https://www.frontendmentor.io/solutions/recipe-page-with-mobile-first-approach-U1gT_DJkzH)
+- Live Site URL: ![Live Site URL](https://adriarodr.github.io/recipe-page/)
 
 ## My process
 
@@ -39,5 +39,5 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ## Author
 
-- Website - [Add your name here](https://github.com/adriarodr)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/adriarodr)
+- Website - [adriarodr's github](https://github.com/adriarodr)
+- Frontend Mentor - [@adriarodr](https://www.frontendmentor.io/profile/adriarodr)
