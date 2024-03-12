@@ -26,9 +26,8 @@ The challenge is to recreate the recipe page from the screenshot on the challeng
 
 ### Links
 
-- Solution URL: ![Frontend Mentor Solution URL](https://www.frontendmentor.io/solutions/recipe-page-with-mobile-first-approach-U1gT_DJkzH)
-- Live Site URL: ![Live Site URL](https://adriarodr.github.io/recipe-page/)
-- Solution URL: ![Live Site URL](https://adriarodr.github.io/recipe-page/)
+- Solution URL: [Frontend Mentor Solution URL](https://www.frontendmentor.io/solutions/recipe-page-with-mobile-first-approach-U1gT_DJkzH)
+- Live Site URL: [Live Site URL](https://adriarodr.github.io/recipe-page/)
 
 ## My process
 
